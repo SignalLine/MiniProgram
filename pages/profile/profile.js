@@ -1,33 +1,11 @@
-// pages/home/home.js
+// pages/profile/profile.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-      name:'Say',
-      age: 18,
-      students:[
-        { id: 110, name: 'kobe', age: 18 },
-        { id: 111, name: 'james', age: 28 },
-        { id: 112, name: 'kobe2', age: 30 },
-        { id: 113, name: 'kobe3', age: 29 }
-      ],
-      counter:0
-  },
 
-  /**
-   * 按钮点击事件
-   */
-  handleBtnClick(){
-    //错误做法，界面不刷新
-    // this.data.counter += 1
-    // console.log("按钮点击" + this.data.counter)
-
-    //2.this.setData()
-    this.setData({
-      counter:this.data.counter + 1
-    })
   },
 
   /**
