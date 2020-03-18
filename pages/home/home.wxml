@@ -1,3 +1,19 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button size="mini">按钮</button>
+
+
+<!-- 方法2 获取用户信息 -->
+<button size="mini" 
+        open-type="getUserInfo" 
+        bindgetuserinfo="handleGetUserInfo">
+  获取授权
+</button>
+<!-- 方法3 获取用户信息方式 只做展示 -->
+<open-data type="userNickName"></open-data>
+<open-data type="userAvatarUrl"></open-data>
+<open-data type="userNickName"></open-data>
+
+<view bindtap="handleViewClick">{{message}}</view>
+
+<view wx:for="{{list}}">{{item.title}}</view>
