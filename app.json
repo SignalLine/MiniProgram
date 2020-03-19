@@ -1,6 +1,13 @@
 {
   "pages": [
-    "pages/home/home"
+    "pages/wxss/wxss",
+    "pages/home/home",
+    "pages/scroll/scroll",
+    "pages/input/input",
+    "pages/image/image",
+    "pages/view/view",
+    "pages/button/button",
+    "pages/text/text"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -9,5 +16,6 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
-  }
+  },
+  "sitemapLocation":"sitemap.json"
 }

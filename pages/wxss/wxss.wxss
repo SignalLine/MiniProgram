@@ -1,0 +1,27 @@
+/* pages/wxss/wxss.wxss */
+@import "./style/box.wxss";
+
+
+.box{
+  background: green;
+}
+
+/* !important  优先级最高*/
+.content{
+  background: orange !important;
+}
+
+/* .box1{
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  background: orange;
+}
+
+.box2{
+  margin-top: 10rpx;
+  width: 100rpx;
+  height: 100rpx;
+  background: orange;
+} */
+

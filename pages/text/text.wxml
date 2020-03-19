@@ -1,0 +1,22 @@
+<!--pages/text/text.wxml-->
+
+<!-- 1.基本使用 -->
+<text>Hello</text>
+<text>你是谁\n</text>
+
+<!-- 2.默认text中的文本是不能选中 -->
+<!-- selectable:true -->
+<text selectable>selectable\n</text>
+<text selectable="{{true}}">selectable\n</text>
+
+<!-- 3.space:决定文本空格大小 -->
+<!-- ensp:半个中文字符大小 -->
+<!-- emsp:中文字符大小 -->
+<!-- nbsp:根据字体设置的空格大小 -->
+<text space="nbsp">Hello World\n</text>
+<text space="ensp">Hello World\n</text>
+<text space="emsp">Hello World\n</text>
+
+<!-- decode是否解码文本 &nbsp; &lt; &amp; &apos; &ensp; &emsp; -->
+<text>5 &gt; 3\n</text>
+<text decode>5 &gt; 3\n</text>

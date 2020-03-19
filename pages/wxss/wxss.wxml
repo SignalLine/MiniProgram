@@ -1,0 +1,20 @@
+<!--pages/wxss/wxss.wxml-->
+<text>pages/wxss/wxss.wxml</text>
+
+<!-- 1.设置样式方式 行内样式 -->
+<view style="color:red;">哈哈</view>
+
+<!-- 2.页内样式 -->
+<view class="box">呵呵</view>
+
+<!-- 3.全局样式 -->
+<view class="container">嘿嘿嘿</view>
+
+<!-- 三种作用于同一个组件  行内优先级最高 -->
+<view style="background:blue;" class="content">嘻嘻嘻</view>
+
+<!-- 3.wxss中的单位 rpx -->
+<view class="box1"></view>
+<view class="box2"></view>
+
+

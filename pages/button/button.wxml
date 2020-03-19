@@ -1,0 +1,27 @@
+<!--pages/button/button.wxml-->
+
+<!-- button -->
+<button>按钮</button>
+
+
+<!-- 2.size属性 mini -->
+<button size="mini">小按钮</button>
+<button size="mini">小按钮</button>
+
+<!-- 3.type -->
+<button size="mini" type="primary">按钮啊</button>
+<button size="mini" type="default">按钮啊</button>
+<button size="mini" type="warn">按钮啊</button>
+
+<!-- 4.plain 镂空效果 -->
+<button size="mini" plain>按钮</button>
+<!-- 5.loading加载效果 -->
+<button size="mini" loading="{{isLoading}}">按钮</button>
+<!-- 6.hover-class -->
+<button hover-class="pressed">按钮</button>
+
+<!-- 7.open-type -->
+<button size="mini" open-type="contact" bindcontact="onContact">会话</button>
+<button size="mini" open-type="share">程序分享</button>
+<button size="mini" open-type="getPhoneNumber" bindgetphonenumber="onGetPhoneNumber">获取电话</button>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">用户信息</button>

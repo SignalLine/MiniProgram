@@ -1,0 +1,23 @@
+<!--pages/view/view.wxml-->
+
+<!-- view 基本使用 独占一行 块结构 -->
+<view>
+  容器
+  <view>内部容器</view>
+</view>
+
+<view class="box1" hover-class="hover-view">box1</view>
+<!-- hover-stop-propagation  指定是否阻止本节点的祖先节点出现点击态 -->
+<view 
+    class="box2" 
+    hover-class="hover-view">
+  <view 
+      class="box2" 
+      hover-class="hover-view"
+      hover-stop-propagation="{{true}}">  
+    box1
+  </view>
+  box2
+</view>
+
+
