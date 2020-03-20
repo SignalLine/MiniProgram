@@ -1,7 +1,9 @@
 {
   "pages": [
-    "pages/wxss/wxss",
     "pages/home/home",
+    "pages/wxs/wxs",
+    "pages/wxml/wxml",
+    "pages/wxss/wxss",
     "pages/scroll/scroll",
     "pages/input/input",
     "pages/image/image",
