@@ -9,5 +9,9 @@
     "backgroundColor": "#eeeeee",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": false
-  }
+  },
+  "usingComponents":{
+    "my-cpn": "/components/my-cpn/my-cpn"
+  },
+  "sitemapLocation": "sitemap.json"
 }

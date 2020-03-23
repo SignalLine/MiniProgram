@@ -1,0 +1,6 @@
+<!--components/my-solt/my-solt.wxml-->
+<view>我是组件头部</view>
+
+<slot/>
+
+<view>我是组件尾部</view>

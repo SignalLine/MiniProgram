@@ -1,3 +1,99 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button size="mini">按钮</button>
+
+
+<!-- 1.hidden属性 -->
+<view hidden>hahaha</view>
+
+<!-- wx:if  selectable -->
+
+<view class="outer">
+  <block wx:for="{{names}}" key="{{index}}">
+    <view class="inner">{{item}}</view>
+  </block>
+</view>
+
+
+<!-- 事件冒泡和事件捕获 -->
+<!-- bind会一层层传递 -->
+<!-- catch：会阻止事件的进一步传递 -->
+<!-- <view class="view1" capture-bind:tap="handleCaptureView1" bindtap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleBindView2">
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleBindView3">
+
+    </view>
+  </view>
+</view>
+
+<view class="view1" capture-catch:tap="handleCaptureView1" bindtap="handleBindView1">
+  <view class="view2" capture-bind:tap="handleCaptureView2" bindtap="handleBindView2">
+    <view class="view3" capture-bind:tap="handleCaptureView3" bindtap="handleBindView3">
+
+    </view>
+  </view>
+</view> -->
+
+
+<!-- 自定义组件 -->
+<!-- <my-cpn></my-cpn> -->
+<!-- <my-cpn></my-cpn> -->
+
+
+<!-- 自定义组件的样式细节 
+  本页的样式不会作用于自定义的组件
+  组件内部样式不会对外部组件样式造成影响
+  组件外部样式也不会对内部组件样式造成影响
+
+  组件内不能使用id，属性，标签 选择器
+-->
+<my-style/>
+
+
+<!-- 自定义组件传递数据 -->
+<my-prop title="哈哈哈" titleclass='red'/>
+<my-prop title="嘿嘿嘿" titleclass='green'/>
+<my-prop titleclass='blue'/>
+
+
+
+<!-- 组件传递事件 -->
+<view>当前计数:{{counter}}</view>
+<my-event bind:increment="handleIncrement"/>
+
+
+<!-- 自定义 -->
+<w-tab-control titles="{{['流行','新款','精选']}}"  bind:titleclick="handleTitleClick"/>
+
+<!-- 直接选中组件中修改数据/调用方法 -->
+<button size="mini" bindtap="handleIncrementCpn">修改组件内数据</button>
+<my-sel class='sel-class' id='sel-id'/>
+
+
+
+<!-- 单个 插槽的使用 -->
+<my-slot>
+  <button size="mini">我是插槽button</button>
+</my-slot>
+
+<view>--------------</view>
+
+<my-slot>
+  <text>我是插槽文本</text>
+</my-slot>
+
+
+<!-- 多个插槽的使用 -->
+
+<!-- 注意事项：
+    1.给每一个插槽起一个名字 name属性
+    2.必须在Component对象js中添加一个选项:options -> multipleSlots:true
+ -->
+<my-mslot>
+
+  <button size="mini" slot="slot2">我是插槽的按钮2</button>
+  <text slot="slot1">我是插槽文本1</text>
+  <slider value="30" slot="slot3"/>
+</my-mslot>
+
+

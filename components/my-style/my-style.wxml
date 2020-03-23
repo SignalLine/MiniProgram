@@ -1,0 +1,8 @@
+<!--components/my-style/my-style.wxml-->
+
+
+<view class="title">style标题</view>
+<view class="content">我是style内容</view>
+
+
+
