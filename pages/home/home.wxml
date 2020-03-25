@@ -1,3 +1,42 @@
 <!--pages/home/home.wxml-->
 <text class="title">Hello World!</text>
 <button size="mini">按钮</button>
+
+<!-- 1弹窗 Toast-->
+<button size="mini" bind:tap="handleShowToast">showToast</button>
+<button size="mini" bind:tap="handleShowModal">ShowModal</button>
+<button size="mini" bind:tap="handleShowLoading">ShowLoading</button>
+<button size="mini" bind:tap="handleShowActionSheet">ShowActionSheet</button>
+
+<!-- 分享 -->
+<button size="mini" open-type="share">分享\n</button>
+
+
+
+<!-- 页面跳转 -->
+<text>\n----------------------------------</text>
+<text>\n navigator页面跳转</text>
+
+<navigator url="/pages/detail/detail">跳到详情页</navigator>
+<!-- navigator 属性 open-type
+    navigate 默认
+    redirect 重定向 关闭当前页面跳转到应用内的某一个页面，但是不允许跳转到tabber页面，并且不能返回
+    switchTab 跳转到tabbar页面，并关闭其他所有非tabbar页面
+    reLaunch 关闭所有页面，打开应用中某一个页面（直接展示某个页面，并且可以跳转到tabbar页面）
+    navigateBack  返回到上一页
+    exit
+ -->
+<navigator url="/pages/about/about"
+    open-type="switchTab">
+  跳到关于页（switchTab）
+</navigator>
+
+
+<!-- 跳转过程中数据传递 -->
+<navigator url="/pages/detail/detail?name=aaa&age=13">跳到详情页(带数据)</navigator>
+<view>{{title}}</view>
+
+
+<!-- 代码进行页面跳转 -->
+<button size="mini" bind:tap="handlePushDetail">跳转到详情页</button>
+
