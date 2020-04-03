@@ -1,0 +1,4 @@
+<!--pages/email/sendemail.wxml-->
+<button bind:tap="handleSendEmail">发送邮件</button>
+<button bind:tap="handleSendEmail2">发送邮件2</button>
+<button bind:tap="handleUploadFile">上传文件</button>
